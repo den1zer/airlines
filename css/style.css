@@ -1,15 +1,108 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/*login page*/
+.main_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.register_link{
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 70%;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 22px;
+}
+.login_btn{
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  background: rgba(121, 109, 202, 0.12);
+  width: 50%;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 25%;
+  border-radius: 40px;
+  border: 2px solid rgba(193, 26, 40, 0.67);
+}
+.login_btn:hover{
+  background: rgba(193, 26, 40, 0.39);
+  border: 3px solid rgb(29, 35, 45);
+}
+.login_btn:active {
+  transform: scale(0.9);
+  transition: 1ms;
+}
+/*registration page*/
+.back_btn{
+  position: absolute;
+  left: 1.5%;
+  top: 2%;
+  font-size: 50px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+}
+/*login/registration field*/
+.login_input{
+  display: block;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 25%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.84);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 36px;
+}
+/*tickets page*/
+.order_btn{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  font-size: 50px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+}
+.field_search{
+  width: 20%;
+  height: 70px;
+  text-align: center;
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+  color: #000000;
+  font-weight: bold;
+  margin: 50px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.84);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 36px;
+}
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+.field_search_label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  color: #fff;
+  text-align: center;
+
+}
+.field_search_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
 
 html {
   color: #222;

@@ -3,26 +3,28 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/style.css">
 <head>
-  <meta charset="UTF-8">
-  <title>Tickets</title>
+    <meta charset="UTF-8">
+    <title>Register</title>
 </head>
+
 <body>
 <header>
-  <img src="img/logout.png" alt="back" class="back_btn" onclick="location.href='login.html'">
-  <img src="img/order.png" alt="airplane" class="order_btn">
-  <p class="main_head">Tickets</p>
+  <p class="main_head">  Register a new account</p>
+  <img src="img/back.png" alt="back" class="back_btn" onclick="history.back()">
 </header>
 <main>
-<label class="field_search_label" >
-  <input class="field_search" type="text" placeholder="City from" >
-  <input class="field_search" type="text" placeholder="City to">
-  <input class="field_search" type="text" placeholder="Amount">
-  <input class="field_search" type="date">
-  <input class="field_search" type="time">
 
-</label>
-  <button class="login_btn">Search</button>
+  <label>
+
+    <input class="login_input" id="cr_login" type="text" placeholder="Login">
+    <input class="login_input" id="cr_password" type="text" placeholder="Password">
+    <input class="login_input" id="cr_cnf_password" type="text" placeholder="Confirm Password">
+    <button class="login_btn" id="registerButton" > Register </button>
+
+  </label>
+
 </main>
+
 <footer>
   <b>
     Contacts
@@ -33,5 +35,7 @@
     <a href="https://www.instagram.com/den1zer?igsh=b2hwaXdnNnZ0M2Z6&utm_source=qr"><img src="img/instagram.png" alt="instagram" class="icons"> Instagram</a>
   </div>
 </footer>
+<script src="js/registration.js"></script>
 </body>
+
 </html>
