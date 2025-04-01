@@ -28,4 +28,14 @@ footer{
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .icons{
+    height: 20px;
+    width: 20px;
+  }
+  footer{
+    font-size: 17px;
+  }
+}
+
 

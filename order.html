@@ -5,22 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <meta charset="UTF-8">
-  <title>Tickets</title>
+  <title>Your order</title>
 </head>
 <body>
 <header>
   <img src="img/logout.png" alt="back" class="back_btn" onclick="location.href='login.html'">
-  <img src="img/order.png" alt="airplane" class="order_btn" onclick="location.href='order.html'">
+  <img src="img/menu.png" alt="airplane" class="order_btn" onclick="location.href='main.html'">
+  <img src="img/history.png" alt="history" class="history_btn" onclick="location.href='order_history.html'">
   <p class="main_head">Tickets</p>
 </header>
 <main>
-<label class="field_search_label" >
-  <input id="city_from" class="field_search" type="text" placeholder="City from" >
-  <input id="city_to" class="field_search" type="text" placeholder="City to">
-  <input id="date" class="field_search" type="date" placeholder="Date">
+  <div id="cart_container" class="cart_container"></div>
 
-</label>
-  <button id = "search_btn" class="login_btn" >Search</button>
+  <div class="cart_total">
+    <p>Total Price: <span id="total_price">0</span> UAH</p>
+    <button id="confirm_btn" class="confirm_btn">Confirm </button>
+
+  </div>
 </main>
 <footer>
   <b>
@@ -32,7 +33,6 @@
     <a href="https://www.instagram.com/den1zer?igsh=b2hwaXdnNnZ0M2Z6&utm_source=qr"><img src="img/instagram.png" alt="instagram" class="icons"> Instagram</a>
   </div>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/order.js"></script>
 </body>
-
 </html>

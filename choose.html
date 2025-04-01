@@ -5,22 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <meta charset="UTF-8">
-  <title>Tickets</title>
+  <title>List of tickets</title>
 </head>
 <body>
 <header>
-  <img src="img/logout.png" alt="back" class="back_btn" onclick="location.href='login.html'">
+  <p class="main_head">  List of tickets</p>
+  <img src="img/back.png" alt="back" class="back_btn" onclick="history.back()">
   <img src="img/order.png" alt="airplane" class="order_btn" onclick="location.href='order.html'">
-  <p class="main_head">Tickets</p>
 </header>
 <main>
-<label class="field_search_label" >
-  <input id="city_from" class="field_search" type="text" placeholder="City from" >
-  <input id="city_to" class="field_search" type="text" placeholder="City to">
-  <input id="date" class="field_search" type="date" placeholder="Date">
+  <table id="table" >
+    <thead class="table_head">
+    <tr>
+      <th>City from</th>
+      <th>City to</th>
+      <th>Clas</th>
+      <th>Seat</th>
+      <th>Time</th>
+      <th>Date</th>
+      <th>Price</th>
+      <th>Press</th>
+    </tr>
+    </thead>
+<tbody>
 
-</label>
-  <button id = "search_btn" class="login_btn" >Search</button>
+</tbody>
+  </table>
 </main>
 <footer>
   <b>
@@ -32,7 +42,6 @@
     <a href="https://www.instagram.com/den1zer?igsh=b2hwaXdnNnZ0M2Z6&utm_source=qr"><img src="img/instagram.png" alt="instagram" class="icons"> Instagram</a>
   </div>
 </footer>
-<script src="js/main.js"></script>
 </body>
-
+<script src="js/choose.js"></script>
 </html>
